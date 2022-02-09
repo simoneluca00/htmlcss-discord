@@ -21,6 +21,14 @@ nav.menu-orizzontale {
     display: inline-block;
 }
 
+h2 {
+    font-size: 3em;
+}
+
+p {
+    line-height: 30px;
+}
+
 /* UTILITY */
 .button {
     padding: 10px 30px;
@@ -35,6 +43,12 @@ nav.menu-orizzontale {
 .bg-black {
     background-color: black;
     color: white;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* INTESTAZIONE */
@@ -94,10 +108,6 @@ div.text-hero {
     transform: translate(-50%, -50%);
 }
 
-div.text-hero > h2 {
-    font-size: 3em;
-}
-
 div.text-hero > p {
     margin: 20px 0 30px 0;
 }
@@ -105,3 +115,35 @@ div.text-hero > p {
 div.text-hero > a:first-of-type {
     margin-right: 20px;
 }
+
+/* PRIMA SEZIONE */
+.first-sec {
+    margin-top: 100px;
+}
+
+div.row {
+    width: 80%;
+    margin: 0 auto;
+}
+
+div.row > div.img-sec {
+    float: left;
+    margin-right: 20px;
+    width: calc( 72% - 20px );
+}
+
+div.row > div.text-sec {
+    float: left;
+    width: 28%;
+    margin-right: 0;
+}
+
+div.text-sec > h2 {
+    margin-bottom: 40px;
+}
+
+div.text-sec > p {
+    font-size: 1.2em;
+}
+
+/* SECONDA SEZIONE */
