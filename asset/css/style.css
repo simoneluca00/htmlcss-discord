@@ -116,9 +116,15 @@ div.text-hero > a:first-of-type {
     margin-right: 20px;
 }
 
-/* PRIMA SEZIONE */
-.first-sec {
-    margin-top: 100px;
+/* GENERALI SEZIONI */
+.sec-float {
+    padding-top: 100px;
+}
+
+div.column-img,
+div.column-img-2 {
+    position: relative;
+    bottom: 20px;
 }
 
 div.row {
@@ -126,24 +132,39 @@ div.row {
     margin: 0 auto;
 }
 
-div.row > div.img-sec {
+div.row > div {
     float: left;
-    margin-right: 20px;
-    width: calc( 72% - 20px );
 }
 
-div.row > div.text-sec {
-    float: left;
-    width: 28%;
-    margin-right: 0;
-}
-
-div.text-sec > h2 {
+div.row h2 {
     margin-bottom: 40px;
 }
 
-div.text-sec > p {
+div.row p {
     font-size: 1.2em;
 }
 
-/* SECONDA SEZIONE */
+/* SECONDA/QUARTA SEZIONE */
+div.row > div.column-text {
+    width: 28%;
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+div.row > div.column-img {
+    width: calc( 72% - 100px );
+}
+
+/* TERZA SEZIONE */
+div.row > div.column-img-2 {
+    width: calc(65% - 70px);
+    margin-left: 70px;
+}
+
+div.row > div.column-text-2 {
+    width: 35%;
+}
+
+section:nth-child(3) {
+    background-color: #f6f6f6;
+}
