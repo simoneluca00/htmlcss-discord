@@ -1,0 +1,68 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* GENERALE */
+a,
+li,
+nav.menu-orizzontale {
+    display: inline-block;
+}
+
+/* UTILITY */
+.button {
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+span.button > a {
+    color: black;
+}
+
+/* INTESTAZIONE */
+header {
+    background-color: #3161e0;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.intestazione {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#logo {
+    vertical-align: middle;
+}
+
+/* MENU ORIZZONTALE */
+nav.menu-orizzontale {
+    margin: 0 15%;
+}
+
+nav ul li a {
+    padding: 0 20px;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(122, 0, 122);
+    font-weight: bold;
+    font-size: 1.2em;
+}
