@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 a {
@@ -29,6 +30,11 @@ nav.menu-orizzontale {
 .bg-white {
     background-color: white;
     color: black;
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
 }
 
 /* INTESTAZIONE */
@@ -67,4 +73,35 @@ nav ul li a:hover {
     color: rgb(122, 0, 122);
     font-weight: bold;
     font-size: 1.2em;
+}
+
+/* SEZIONE HERO */
+section.hero {
+    height: 50vh;
+    background-image: url("./../img/jumbo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+div.text-hero {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.text-hero > h2 {
+    font-size: 3em;
+}
+
+div.text-hero > p {
+    margin: 20px 0 30px 0;
+}
+
+div.text-hero > a:first-of-type {
+    margin-right: 20px;
 }
