@@ -100,6 +100,7 @@ nav ul li a:hover {
     color: rgb(122, 0, 122);
     font-weight: bold;
     font-size: 1.2em;
+    text-decoration: underline;
 }
 
 /* SEZIONE HERO */
@@ -125,12 +126,13 @@ div.text-hero > a:first-of-type {
 }
 
 /* GENERALI SEZIONI */
-.sec-float {
+/* .sec-float {
     padding-top: 100px;
-}
+    padding-bottom: 100px;
+} */
 
 div.row {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -149,23 +151,25 @@ div.row p {
 
 /* SECONDA/QUARTA SEZIONE */
 div.row > div.column-text {
-    width: 28%;
-    margin-right: 0;
-    margin-left: 20px;
+    width: 30%;
+    margin-right: 80px;
 }
 
 div.row > div.column-img {
-    width: calc( 72% - 100px );
+    width: calc(70% - 80px);
 }
 
 /* TERZA SEZIONE */
 div.row > div.column-img-2 {
-    width: calc(65% - 70px);
-    margin-left: 70px;
+    width: 67%;
 }
 
+div.row > div.column-img-2 img {
+    padding-left: 150px;
+} 
+
 div.row > div.column-text-2 {
-    width: 35%;
+    width: 33%;
 }
 
 section:nth-child(3),
@@ -193,6 +197,7 @@ div.stars {
 div.stars > h3 {
     padding: 20px;
     font-size: 1.7em;
+    margin-bottom: 40px;
 }
 
 /* FOOTER */
