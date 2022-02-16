@@ -47,11 +47,14 @@ p {
 .button {
     padding: 10px 30px;
     border-radius: 30px;
+    display: inline-block;
 }
 
 .bg-white {
     background-color: white;
     color: black;
+    padding: 10px 30px;
+    border-radius: 30px;
 }
 
 .bg-black {
@@ -62,6 +65,17 @@ p {
 .bg-violet {
     background-color: #8ea1e1;
     color: white;
+}
+
+.bg-violet:hover,
+.bg-black:hover {
+    text-decoration: underline;
+    box-shadow: inset 0px 0px 5px lightgray;
+}
+
+.bg-white:hover  {
+    text-decoration: underline;
+    box-shadow: inset 0px 0px 5px rgb(70, 70, 70);   
 }
 
 .clearfix::after {
@@ -84,6 +98,7 @@ header {
     height: 60px;
     line-height: 60px;
     text-align: center;
+    min-width: 1080px;
 }
 
 .intestazione {
@@ -121,7 +136,7 @@ nav > ul > li > a:hover {
 
 /* SEZIONE HERO */
 section#hero {
-    height: 50vh;
+    height: 60vh;
     background-image: url("./../img/jumbo.png");
     background-size: cover;
     background-position: center;
@@ -137,8 +152,9 @@ div.text-hero > p {
     margin: 20px 0 30px 0;
 }
 
-div.text-hero > a:first-of-type {
-    margin-right: 20px;
+div.text-hero > a {
+    display: inline-block;
+    margin: 0 10px;
 }
 
 /* GENERALI SEZIONI */
@@ -248,7 +264,7 @@ div.f-column {
 
 footer  h3 {
     color: #8ea1e1;
-    font-size: 1.8em;
+    font-size: 2.3em;
     margin-bottom: 40px;
 }
 
@@ -293,11 +309,12 @@ div.f-column ul li {
 }
 
 div.f-column.info-footer {
-    width: calc(40% - 40px);
+    width: calc(32% - 40px);
 }
 
 div.f-column.list-footer {
-    width: calc(15% - 40px);
+    width: calc(17% - 40px);
+    min-height: 400px;
 }
 
 #under-footer {
